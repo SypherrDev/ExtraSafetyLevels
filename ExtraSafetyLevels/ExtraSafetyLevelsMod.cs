@@ -29,8 +29,8 @@ namespace ExtraSafetyLevels
             var horizontalLayoutGroup = GameObject.Find("UserInterface/MenuContent/Screens/Settings_Safety/_Buttons_UserLevel").GetComponent<HorizontalLayoutGroup>();
             horizontalLayoutGroup.childControlWidth = true;
             horizontalLayoutGroup.childForceExpandWidth = true;
-            new SafetyLevel("Nuisance", Color.red, UserSocialClass.NegativeTrustLevel1, "<i>Nuisances</i> are confirmed trolls that have been reported/blocked/muted a lot. <i>Nuisances</i> should have the least amount of avatar features visible.").gameObject.transform.SetAsFirstSibling();
-            new SafetyLevel("LocalPlayer", Color.cyan, UserSocialClass.LocalPlayer, "You can apply safety on your Local-Player (Your own player).");
+            new SafetyLevel("Nuisance", Color.grey, UserSocialClass.NegativeTrustLevel1, "<i>Nuisances</i> are confirmed trolls that have been reported/blocked/muted a lot. <i>Nuisances</i> should have the least amount of avatar features visible.").gameObject.transform.SetAsFirstSibling();
+            new SafetyLevel("Staff", Color.red, UserSocialClass.DeveloperTrustLevel, "VRChat Team are people who work for VRChat, they are verified Staff.");
             yield return null;
         }
     }
